@@ -1,0 +1,7 @@
+<div>
+    <div class="modal-wrapper" v-if="modalVisible" @click.stop.prevent="$modal.hide()">
+        <div class="modal-container" @click.stop.prevent="">
+            <component :is="activeModalComponent" :modalProps="activeModalProps"></component>
+        </div>
+    </div>
+</div>

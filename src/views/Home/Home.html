@@ -1,0 +1,8 @@
+<div>
+    Home Page
+
+    <router-link :to="{ name: 'about' }">ABOUT</router-link>
+
+    <button @click.stop.prevent="openModal()">OPEN MODAL</button>
+    <button @click.stop.prevent="showLoader()">SHOW LOADER</button>
+</div>
