@@ -1,3 +1,16 @@
+.loader-container {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    background-color: transparent;
+    min-height:100%;
+    width: 100%;
+    align-content: center;
+    z-index: 10;
+}
+
 .loader-backdrop {
     position: fixed;
     top: 0px;
@@ -9,7 +22,6 @@
     min-height:100%;
     width: 100%;
     align-content: center;
-    z-index: 10;
 }
 
 .loader {
@@ -19,7 +31,7 @@
     width: 60px;
     height: 60px;
     animation: spin 2s linear infinite;
-    margin-top: 30%;
+    margin-top: 20%;
     margin-left: 47%;
 }
 

@@ -1,8 +1,24 @@
 <div>
-    Home Page
+    <div>
+        Home Page
+    </div>
+    <router-link :to="{ name: 'about' }" tag="div" class="about-link">
+        Go to About Page
+    </router-link>
 
-    <router-link :to="{ name: 'about' }">ABOUT</router-link>
+    <div class="modal-parent">
+        <button @click.stop.prevent="openModal()">
+            OPEN MODAL
+        </button>
+        <div class="modal-desc">
+            Click here to open the modal. This modal is a singleton component in the whole app.
+        </div>
+    </div>
 
-    <button @click.stop.prevent="openModal()">OPEN MODAL</button>
-    <button @click.stop.prevent="showLoader()">SHOW LOADER</button>
+    <div class="loader-parent">
+        <button @click.stop.prevent="showLoader()">SHOW LOADER</button>
+        <div class="loader-desc">
+            Click here to show the loader. This loader will close automatically in 2 seconds.
+        </div>
+    </div>
 </div>

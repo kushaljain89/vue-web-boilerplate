@@ -1,0 +1,54 @@
+.about-link {
+    color: #275DF9;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 20px 0px;
+}
+
+button {
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: aliceblue;
+}
+
+.modal-parent {
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.modal-desc {
+    display: none;
+    background-color: #42b983;
+    color: #ffffff;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.modal-parent:hover .modal-desc {
+    display: block;
+    position: absolute;
+    left: 35%;
+}
+
+.loader-parent{
+    display: inline-block;
+}
+
+.loader-desc {
+    display: none;
+    background-color: #42b983;
+    color: #ffffff;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.loader-parent:hover .loader-desc {
+    display: block;
+    position: absolute;
+    right: 35%
+}
