@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home/Home.vue'
-import About from './views/About/About.vue'
+import ApiDemo from './views/ApiDemo/ApiDemo.vue'
 
 Vue.use(Router)
 
@@ -13,9 +13,9 @@ export default new Router({
       component: Home
     },
     {
-      path: '/about',
-      name: 'about',
-      component: About
+      path: '/api-demo',
+      name: 'api-demo',
+      component: ApiDemo
     }
   ]
 })

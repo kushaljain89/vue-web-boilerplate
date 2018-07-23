@@ -1,0 +1,43 @@
+<div>
+    <div>
+        Api Demo Page
+    </div>
+
+    <div>
+        <router-link :to="{ name: 'home' }" tag="div" class="home-link">
+            Go to Home Page
+        </router-link>
+    </div>
+
+    <div class="table-parent" v-if="userList && userList.length">
+        <div class="table-heading">
+            <div>
+                <button @click.stop.prevent="userList = []">
+                    CLEAR LIST
+                </button>
+            </div>
+
+            <h3>User List:</h3>
+
+        </div>
+        <div class="table-row">
+            <span class="table-cell"><b>ID</b></span>
+            <span class="table-cell"><b>Username</b></span>
+            <span class="table-cell"><b>NAME</b></span>
+        </div>
+        <div class="table-row" v-for="user in userList">
+            <span class="table-cell">{{user['id']}}</span>
+            <span class="table-cell">{{user['username']}}</span>
+            <span class="table-cell">{{user['name']}}</span>
+        </div>
+    </div>
+    <div v-else>
+
+        <div><h3>No Users</h3></div>
+
+        <button @click.stop.prevent="loadPosts()">
+            FETCH USER LIST
+        </button>
+    </div>
+
+</div>

@@ -1,0 +1,26 @@
+.home-link {
+    color: #275DF9;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 20px 0px;
+    display: inline-block;
+}
+
+.table-parent {
+    display: inline-block;
+    width:auto;
+}
+
+.table-heading {
+    display: table-caption;
+}
+
+.table-row {
+    display: table-row;
+}
+
+.table-cell {
+    display: table-cell;
+    text-align: left;
+    padding: 3px 10px;
+}

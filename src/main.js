@@ -6,6 +6,10 @@ import './registerServiceWorker'
 import './components'
 import './mixin'
 
+// This plugin will globally inject the services in the application
+import {ServicePlugin} from "./plugins"
+Vue.use(ServicePlugin)
+
 Vue.config.productionTip = false
 
 new Vue({

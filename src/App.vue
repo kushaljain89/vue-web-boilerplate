@@ -29,4 +29,16 @@
         color: #2c3e50;
         margin-top: 60px;
     }
+
+    button {
+        padding: 10px;
+        border-radius: 5px;
+        font-weight: bolder;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: aliceblue;
+    }
+
 </style>

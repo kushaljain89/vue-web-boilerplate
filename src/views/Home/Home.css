@@ -3,17 +3,7 @@
     font-weight: bold;
     cursor: pointer;
     margin: 20px 0px;
-}
-
-button {
-    padding: 10px;
-    border-radius: 5px;
-    font-weight: bolder;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: aliceblue;
+    display: inline-block;
 }
 
 .modal-parent {

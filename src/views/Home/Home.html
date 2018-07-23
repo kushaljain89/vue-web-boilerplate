@@ -2,9 +2,12 @@
     <div>
         Home Page
     </div>
-    <router-link :to="{ name: 'about' }" tag="div" class="about-link">
-        Go to About Page
-    </router-link>
+
+    <div>
+        <router-link :to="{ name: 'api-demo' }" tag="div" class="about-link">
+            Go to API Demo Page
+        </router-link>
+    </div>
 
     <div class="modal-parent">
         <button @click.stop.prevent="openModal()">
